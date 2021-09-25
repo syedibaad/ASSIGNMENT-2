@@ -1,0 +1,253 @@
+Assignment 2 flutter
+Q1
+The following are the various types of operators in Dart:
+Arithmetic Operators
+Relational Operators
+Type Test Operators
+Bitwise Operators
+Assignment Operators
+Logical Operators
+Conditional Operator
+Cascade Notation Operator
+
+void main()
+{
+    int a = 5;
+    int b = 4	;
+ 
+    // Adding a and b
+    var e = a + b;
+    print("Sum of a and b is $e");
+ 
+    // Subtracting a and b
+    var f = a - b;
+    print("The difference between a and b is $f");
+ 
+    // Using unary minus
+    var g = -d;
+    print("The negation of difference between a and b is $g");
+ 
+    // Multiplication of a and b
+    var h = a * b;
+    print("The product of a and b is $h");
+ 
+    // Division of a and b
+    var i = b / a;
+    print("The quotient of a and b is $i");
+ 
+    // Using / to divide a and b
+    var j = b / a;
+    print("The quotient of a and b is $j");
+ 
+    // Remainder of a and b
+    var i = b % a;
+    print("The remainder of a and b is $i");
+}
+Q2
+1-	1
+2-	1
+3-	3
+4-	3
+Q3 
+void main() {
+ int  ticket = 600;
+ int no = 5;
+ int a=ticket*no;
+  print ('Price  of 1 ticket is  $ticket');
+  print ('Total no of ticket $no');
+  print ('Total price of ticket $a');
+  
+  
+  
+  
+  
+  
+}
+Q4
+void main() {
+ List<int> a = [1,2,3,4,5,6,7];
+List<int> b = [3,5,6,7,9,10];
+List<int> e = a.toSet().difference(b.toSet()).toList();
+print(e.toString());
+  
+  
+  
+  
+  
+  
+}
+Q5:
+? dealing with values that might be null
+??, which returns the expression on its left unless that expression’s value is null
+Q6:
+Data Types
+
+Number 
+void main() {
+    
+   int num12 = 2;             
+       
+   double num22 = 1.5;  
+  
+   print(num12);
+}
+
+String
+void main() {
+    
+   String name = “usama”;               
+  
+   print(name);
+}
+
+
+
+ Boolean
+String
+void main() {
+    
+   int a = 1;
+   int b = 2;
+bool c =a<2
+print (c);
+
+}
+
+List
+void main() 
+{ 
+    List usa = new List(3); 
+    usa[0] = 'SYED'; 
+    usa[1] = 'IBAAD'; 
+    usa[2] = 'MUSHARRAF'; 
+    
+    print(usa); 
+    print(usa[0]); 
+} 
+
+Map:
+void main() { 
+  Map usa = new Map(); 
+  usa['First'] = 'I'; 
+  usa['Second'] = 'm'; 
+  usa['Third'] = IBAAD;
+  print(usa); 
+}  
+
+Q7:
+A:
+void main()
+{
+Var array = new list(7);
+}
+B:
+void main() {
+
+  List<int> arr = [1,2,3,4,5,6,7,8,9,10];
+  print(arr);
+
+
+}
+
+C:
+Q8
+
+import 'dart:io';
+ 
+void main()
+{
+    String password = "IB123"
+    print("Enter your password?");
+
+    String? password = stdin.readLineSync();
+    if password = "IB123"
+    {
+        print("password is correct")
+        
+
+    }
+
+    else 
+    {
+        print("you enterd an incorrect password ")
+
+    }
+    
+}
+Q9:
+void main() {
+
+  int total = 100;
+  List<int> score = [50,70,90];
+  List<String> name = ['ibaad','saad','waleed'];
+  print(total);
+  print(score);
+  print(name); 
+
+}
+Q10
+ (legal): var69_a * 
+(illegal): 69var_a
+(legal): snake_1 *
+(illegal): $nake#1
+
+Q11
+String city = "HYDERABAD"
+    String result= city.replaceAll("HYDER", "ISLAM");
+     
+    print(result);
+
+Q12
+
+
+void main()
+{
+    int unit = 500;
+    double amt, total_amt, sur_charge;
+    double amt1=400;
+    double a;
+    
+
+    print("------- Welcome to K.E --------");
+   print("Account no : 2101010");
+  print("House no : 716");
+   print("Address : abc xyz 123 456 karachi,Pakistan");
+    
+  DateTime now = new DateTime.now();
+  print ("Due Date 30-SEP-2021");
+  print ("Current now = $now");
+  print("Total units consumed = $unit ");
+  
+
+    if(unit <= 50)
+    {
+        amt = unit * 0.50;
+    }
+    else if(unit <= 150)
+    {
+        amt = 25 + ((unit-50) * 0.75);
+    }
+    else if(unit <= 250)
+    {
+        amt = 100 + ((unit-150) * 1.20);
+    }
+    else
+    {
+        amt = 220 + ((unit-250) * 1.50);
+    }
+
+    /*
+     * Calculate total electricity bill
+     * after adding surcharge
+     */
+    sur_charge = amt * 0.20;
+    total_amt  = amt + sur_charge;
+     a=amt1+total_amt;
+
+    print("Electricity Bill = $total_amt PKR");
+    print("Electricity Bill After due date = $a PKR");
+
+
+}
+
+
